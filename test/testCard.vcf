@@ -22,8 +22,12 @@ TEL;TYPE=T2 - Mid Valley,VOICE:0123322333
 TEL;TYPE=F - Mid Valley,FAX:0123322334
 EMAIL;CHARSET=UTF-8;type=E - Mid Valley,INTERNET:mv@acme.com
 URL;TYPE=W - Mid Valley;CHARSET=UTF-8:https://mv.acme.com
-ADR;CHARSET=UTF-8;TYPE=Home Address:;;123 Main Street;Chicago;IL;12345;United States of America
-ADR;CHARSET=UTF-8;TYPE=Work Address:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345;California Republic
+LABEL;CHARSET=UTF-8;TYPE=Mid Valley:HQ
+ADR;CHARSET=UTF-8;TYPE=Mid Valley:;;123 Corporate Loop Suite 500;Kuala Lumpur;Kuala Lumpur;59200;Malaysia
+LABEL;CHARSET=UTF-8;TYPE=HOME:Home Address
+ADR;CHARSET=UTF-8;TYPE=HOME:;;123 Main Street;Chicago;IL;12345;United States of America
+LABEL;CHARSET=UTF-8;TYPE=WORK:Work Address
+ADR;CHARSET=UTF-8;TYPE=WORK:;;123 Corporate Loop\nSuite 500;Los Angeles;CA;12345;California Republic
 TITLE;CHARSET=UTF-8:Crash Test Dummy
 ROLE;CHARSET=UTF-8:Crash Testing
 ORG;CHARSET=UTF-8:ACME Corporation
@@ -36,5 +40,5 @@ URL;TYPE=twitter:https://twitter/johndoe
 URL;TYPE=flickr:https://flickr/johndoe
 URL;TYPE=custom:https://custom/johndoe
 SOURCE;CHARSET=UTF-8:http://sourceurl
-REV:2021-06-15T09:10:35.276Z
+REV:2021-06-15T15:41:11.012Z
 END:VCARD

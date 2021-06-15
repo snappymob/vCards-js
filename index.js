@@ -143,6 +143,8 @@ var vCard = (function () {
 
         customUrl: [],
 
+        customAddress: [],
+
         /**
          * Other cell phone number or pager
          * @type {String}
