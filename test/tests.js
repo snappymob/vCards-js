@@ -78,13 +78,21 @@ describe('vCard', function() {
     testCard.workAddress.countryRegion = 'California Republic';
 
     testCard.source = 'http://sourceurl';
-    testCard.note = 'John Doe\'s \nnotes;,';
+    testCard.note = 'John Doe\'s \nnotes';
 
     testCard.socialUrls.facebook = 'https://facebook/johndoe';
     testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
     testCard.socialUrls.twitter = 'https://twitter/johndoe';
     testCard.socialUrls.flickr = 'https://flickr/johndoe';
     testCard.socialUrls.custom = 'https://custom/johndoe';
+
+    testCard.customPhone['Mid Valley'] = ['0123322332'];
+    testCard.customPhone['Mid Valley'].push('0123322333');
+
+    testCard.customFax['Mid Valley'] = ['0123322334'];
+
+    testCard.customEmail['Mid Valley'] = ['mv@acme.com'];
+    testCard.customUrl['Mid Valley'] = ['https://mv.acme.com']
 
     var vCardString = testCard.getFormattedString();
     var lines = vCardString.split(/[\n\r]+/);

@@ -133,6 +133,17 @@ var vCard = (function () {
         cellPhone: '',
 
         /**
+         * Custom fields label
+         */
+        customPhone: [],
+
+        customFax: [],
+
+        customEmail: [],
+
+        customUrl: [],
+
+        /**
          * Other cell phone number or pager
          * @type {String}
          */
