@@ -78,7 +78,7 @@ describe('vCard', function() {
     testCard.workAddress.countryRegion = 'California Republic';
 
     testCard.source = 'http://sourceurl';
-    testCard.note = 'John Doe\'s \nnotes';
+    testCard.note = 'John Doe\'s \nnotes;,';
 
     testCard.socialUrls.facebook = 'https://facebook/johndoe';
     testCard.socialUrls.linkedIn = 'https://linkedin/johndoe';
@@ -92,7 +92,16 @@ describe('vCard', function() {
     testCard.customFax['Mid Valley'] = ['0123322334'];
 
     testCard.customEmail['Mid Valley'] = ['mv@acme.com'];
-    testCard.customUrl['Mid Valley'] = ['https://mv.acme.com']
+    testCard.customUrl['Mid Valley'] = ['https://mv.acme.com'];
+
+    testCard.customAddress['Mid Valley'] = {
+        label: 'HQ',
+        street: '123 Corporate Loop Suite 500',
+        city: 'Kuala Lumpur',
+        stateProvince: 'Kuala Lumpur',
+        postalCode: '59200',
+        countryRegion: 'Malaysia',
+    };
 
     var vCardString = testCard.getFormattedString();
     var lines = vCardString.split(/[\n\r]+/);
